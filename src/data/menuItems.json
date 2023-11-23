@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Classic Burger",
+		"description": "Toasted sesame seed bun with a juicy beef patty, fresh lettuce",
+		"image": "/assets/01_classic_burger.png"
+	},
+	{
+		"id": 2,
+		"name": "Caesar Salade",
+		"description": "Crisp romaine lettuce, golden-brown grilled chicken slices and Caesar souce",
+		"image": "/assets/02_caesar_salad.png"
+	},
+	{
+		"id": 3,
+		"name": "Chicken Burger",
+		"description": "Kentucky-style: crispy & golden-brown fried chicken, nestled between soft buns",
+		"image": "/assets/03_chicken_burger.png"
+	},
+	{
+		"id": 4,
+		"name": "French Fries",
+		"description": "Golden and crispy, with a texture that looks both crunchy and fluffy",
+		"image": "/assets/04_french_fries.png"
+	}
+]
