@@ -1,26 +1,82 @@
 [
 	{
 		"id": 1,
-		"name": "Classic Burger",
-		"description": "Toasted sesame seed bun with a juicy beef patty, fresh lettuce",
-		"image": "/assets/01_classic_burger.png"
+		"name": "Ginger Lemon Hummus",
+		"description": "A zesty twist on the classic hummus, our ginger lemon version is a tantalizing blend of Mediterranean tradition and Asian zest, perfect for a light and healthy appetizer.",
+		"ingredients": "Chickpeas, tahini, ginger, lemon, olive oil, pita bread",
+		"price": 12,
+		"image": "/assets/01_ginger_lemon_hummus.png"
 	},
 	{
 		"id": 2,
-		"name": "Caesar Salade",
-		"description": "Crisp romaine lettuce, golden-brown grilled chicken slices and Caesar souce",
-		"image": "/assets/02_caesar_salad.png"
+		"name": "Silken Tofu Caprese",
+		"description": "Reimagining the classic Caprese, our version introduces silken tofu to the mix, creating a refreshing and light fusion dish, perfect for a sophisticated starter.",
+		"ingredients": "Silken tofu, tomatoes, fresh basil, sesame oil, olive oil",
+		"price": 15,
+		"image": "/assets/02_silken_tofu_caprese.png"
 	},
 	{
 		"id": 3,
-		"name": "Chicken Burger",
-		"description": "Kentucky-style: crispy & golden-brown fried chicken, nestled between soft buns",
-		"image": "/assets/03_chicken_burger.png"
+		"name": "Empire Eggplant Tempura",
+		"description": "A crispy, savory delight, our eggplant tempura is given a Mediterranean twist with feta and sun-dried tomatoes, all united by a delicate miso glaze.",
+		"ingredients": "Eggplant, feta cheese, sun-dried tomatoes, tempura batter, miso glaze",
+		"price": 18,
+		"image": "/assets/03_empire_eggplant_tempura.png"
 	},
 	{
 		"id": 4,
-		"name": "French Fries",
-		"description": "Golden and crispy, with a texture that looks both crunchy and fluffy",
-		"image": "/assets/04_french_fries.png"
+		"name": "Olive Dragon Roll",
+		"description": "A daring fusion of East and West, these sushi rolls combine the bold flavors of olive tapenade and spicy tuna, wrapped in fresh cucumber for a crisp, refreshing bite.",
+		"ingredients": "Cucumber, olive tapenade, spicy tuna, avocado, sesame seeds, balsamic reduction",
+		"price": 16,
+		"image": "/assets/04_olive_dragon_roll.png"
+	},
+	{
+		"id": 5,
+		"name": "Saffron Sashimi Symphony",
+		"description": "Experience the delicate harmony of fresh sashimi, subtly enhanced with the luxurious touch of saffron and a citrusy soy emulsion, crafting an unforgettable melody of flavors.",
+		"ingredients": "Salmon, tuna, yellowtail, saffron, microgreens, soy sauce, lemon juice",
+		"price": 25,
+		"image": "/assets/05_saffron_sashimi_symphony.png"
+	},
+	{
+		"id": 6,
+		"name": "Aegean Sushi Platter",
+		"description": "An adventurous exploration of flavors, our Aegean Sushi Platter brings the essence of the Mediterranean to traditional sushi, with ingredients like grilled octopus and tzatziki.",
+		"ingredients": "Sushi rice, nori, grilled octopus, tzatziki, feta cheese, cucumber, olives",
+		"price": 27,
+		"image": "/assets/06_aegean_sushi_platter.png"
+	},
+	{
+		"id": 7,
+		"name": "Zen Garden Risotto",
+		"description": "A tranquil blend of East meets West, our green tea-infused risotto is complemented with grilled seasonal vegetables, offering a serene, flavorful escape.",
+		"ingredients": "Green tea, arborio rice, grilled vegetables, edible flowers, herbs",
+		"price": 21,
+		"image": "/assets/07_zen_garden_risotto.png"
+	},
+	{
+		"id": 8,
+		"name": "MediterrAsian Sea Breeze",
+		"description": "A luxurious blend of the ocean's bounty, featuring grilled scallops and shrimp, harmoniously paired with saffron-infused risotto, combining the best of Mediterranean and Asian flavors.",
+		"ingredients": "Grilled scallops, shrimp, saffron risotto, seaweed, lemon zest, olive oil, garlic, herbs",
+		"price": 29,
+		"image": "/assets/08_mediterrasian_sea_breeze.png"
+	},
+	{
+		"id": 9,
+		"name": "Lotus Pad Thai",
+		"description": "A delightful fusion, our Lotus Pad Thai reinvents the classic with Mediterranean ingredients, blending lotus root noodles with the tangy tastes of sun-dried tomatoes and olives.",
+		"ingredients": "Lotus root noodles, sun-dried tomatoes, kalamata olives, feta cheese, Pad Thai sauce",
+		"price": 20,
+		"image": "/assets/09_lotus_pad_thai.png"
+	},
+	{
+		"id": 10,
+		"name": "Bamboo Baklava",
+		"description": "An exotic take on the traditional baklava, our bamboo-infused version adds an Asian flair to this beloved Mediterranean dessert, creating a sweet, unforgettable finish.",
+		"ingredients": "Phyllo pastry, mixed nuts, bamboo shoots, honey, butter",
+		"price": 10,
+		"image": "/assets/10_bamboo_baklava.png"
 	}
 ]
