@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import { useCart } from './useCart';
 
-import '../styles/App.css';
+// import '../styles/App.css';
 
 function Navbar() {
 	const { items } = useCart();
 	const totalItems = items.reduce((total, item) => total + item.quantity, 0);
 
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-white">
+		<nav className="navbar navbar-expand-lg navbar-light bg-white border-1">
 			<div className="container-fluid">
 				<Link className="navbar-brand px-16" to="/">
 					<img src="/public/assets/logo_2.png" alt="Logo" style={{ height: '40px' }} />

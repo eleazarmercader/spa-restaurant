@@ -75,6 +75,15 @@ h1 {
   line-height: 1.1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #bca27c !important;
+}
+
+p {
+  color: #3b3e2f !important;
+}
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -111,4 +120,31 @@ button:focus-visible {
   background-color: #bca27c;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.detail-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detail-image-container {
+  flex: 2;
+  text-align: center;
+}
+
+.detail-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.detail-info {
+  flex: 2;
+  padding: 20px;
+}
+
+.detail-info h5 {
+  margin-top: 0;
 }
