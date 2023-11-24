@@ -17,22 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.primary {
-  color: #3b3e2f;
-}
-
-.secondary {
-  color: #bca27c;
-}
-
-.bg-primary {
-  background-color: #3b3e2f;
-}
-
-.bg-secondary {
-  background-color: #bca27c;
-}
-
 .nav-link-1 {
   font-weight: bold;
   font-size: large;
@@ -83,15 +67,33 @@ p {
   color: #3b3e2f !important;
 }
 
+.add-btn {
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 0.5em 0.8em;
+}
+.add-btn:hover {
+  background-color: #3b3e2f;
+  color: white;
+}
+
+.info-btn {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #bca27c;
+}
+.info-btn:hover {
+  color: #3b3e2f;
+}
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #3b3e2f;
+  background-color: #bca27c;
   cursor: pointer;
   transition: border-color 0.25s;
 }
