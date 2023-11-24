@@ -4,28 +4,48 @@ import PropTypes from 'prop-types';
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
-    const [cartItems, setCartItems] = useState([]);
+	const [cartItems, setCartItems] = useState([]);
 
-    const addToCart = (newItem) => {
-			setCartItems(prevItems => {
-					const existingItem = prevItems.find(item => item.id === newItem.id);
-					if (existingItem) {
-							// Incrementa la cantidad si el ítem ya está en el carrito
-							return prevItems.map(item =>
-									item.id === newItem.id ? { ...item, quantity: item.quantity + 1 } : item
-							);
-					}
-					// Añade el nuevo ítem al carrito
-					return [...prevItems, { ...newItem, quantity: 1 }];
-			});
+	const addToCart = (item) => {
+		setCartItems(prevItems => {
+			const existingItem = prevItems.find(i => i.id === item.id);
+			if (existingItem) {
+				return prevItems.map(i =>
+					i.id === item.id
+						? { ...i, quantity: i.quantity + 1 }
+						: i
+				);
+			}
+			return [...prevItems, { ...item, quantity: 1 }];
+		});
 	};
 
-    const value = {
-        items: cartItems,
-        addToCart
-    };
+	const removeFromCart = (itemId) => {
+		setCartItems(prevItems => prevItems.filter(i => i.id !== itemId));
+	};
 
-    return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+	const updateQuantity = (itemId, quantity) => {
+		setCartItems(prevItems => 
+			prevItems.map(i => 
+				i.id === itemId
+					? { ...i, quantity: quantity }
+					: i
+			)
+		);
+	};
+
+	const totalPrice = cartItems.reduce((total, item) =>
+		total + item.price * item.quantity, 0);
+
+	const value = {
+		items: cartItems,
+		addToCart,
+		removeFromCart,
+		updateQuantity,
+		totalPrice
+	};
+
+	return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 
 CartProvider.propTypes = {

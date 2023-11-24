@@ -148,3 +148,23 @@ button:focus-visible {
 .detail-info h5 {
   margin-top: 0;
 }
+
+.table thead th {
+  border-bottom: 1px solid silver;
+  color: #bca27c;
+  font-size: large;
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.product-row {
+  height: 120px;
+}
+
+.title-cart {
+  color: #bca27c;
+  font-size: medium;
+  font-weight: 500;
+}

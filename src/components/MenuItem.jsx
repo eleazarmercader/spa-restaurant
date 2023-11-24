@@ -19,7 +19,7 @@ function MenuItem({ item }) {
                 <h5 className="card-title">{item.name}</h5>
                 <p className="card-text">${item.price}</p>
                 <Link to={`/detail/${item.id}`} className="btn btn-primary">
-                    Details
+                    More Info
                 </Link>
                 {!isAdded ? (
                     <button onClick={handleAddToCart} className="btn btn-secondary">
