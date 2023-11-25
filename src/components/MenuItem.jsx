@@ -18,7 +18,7 @@ function MenuItem({ item }) {
             <div className="card-body">
                 <h5 className="card-title">{item.name}</h5>
                 <Link to={`/detail/${item.id}`} className="info-btn">
-                    Description
+                    Description & ingredients
                 </Link>
                 <p className="card-text font-semibold mt-2">CHF {item.price}</p>
                 <div className='flex justify-around'>
@@ -31,7 +31,7 @@ function MenuItem({ item }) {
                             <button onClick={handleAddToCart} className="add-btn">
                                 Add another one
                             </button>
-                            <Link to={`/detail/${item.id}`} className="ml-4 info-btn">
+                            <Link to="/cart" className="ml-4 info-btn">
                                 Go to cart
                             </Link>
                         </div>

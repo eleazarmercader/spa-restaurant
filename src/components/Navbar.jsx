@@ -11,27 +11,37 @@ function Navbar() {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-white border-1">
 			<div className="container-fluid">
-				<Link className="navbar-brand px-16" to="/">
-					<img src="/public/assets/logo_2.png" alt="Logo" style={{ height: '40px' }} />
-				</Link>
-					<ul className="navbar-nav">
-						<li className="nav-item">
-							<Link className="nav-link-1 px-4" to="/">Home</Link>
-						</li>
-						<li className="nav-item">
-							<Link className="nav-link-1 px-4" to="/menu">Menu</Link>
-						</li>
-					</ul>
-					<ul className="navbar-nav">
-						<li className="nav-item">
-							<Link className="nav-link-1 px-5 flex items-center" to="/cart">
-								<FaShoppingCart />
-								<span className={`text-sm pl-2 ${totalItems > 0 ? '.primary' : 'text-gray-500'}`}> ({totalItems}) </span>
-							</Link>
-						</li>
-					</ul>
+				<Link className="navbar-brand pl-16" to="/">
+					<img
+						src="/public/assets/logo_2.png"
+						alt="Logo"
+						className="h-10"
+					/>
+					</Link>
+						<ul className="navbar-nav">
+							<li className="nav-item">
+								<Link className="nav-link-1 px-8" to="/">Home</Link>
+							</li>
+							<li className="nav-item">
+								<Link className="nav-link-1 px-8" to="/menu">Menu</Link>
+							</li>
+						</ul>
+						<ul className="navbar-nav">
+							<li className="nav-item">
+								<Link className="nav-link-1 px-20 flex items-center" to="/cart">
+									<FaShoppingCart />
+									<span
+										className={`text-sm pl-2
+										${totalItems > 0
+											? '.primary'
+											: 'text-gray-500'
+										}`}>
+											({totalItems})
+										</span>
+								</Link>
+							</li>
+						</ul>
 				</div>
-
 		</nav>
 	);
 }

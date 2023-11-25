@@ -11,9 +11,11 @@ function CartView() {
 
     if (items.length === 0) {
         return (
-            <div className="container mt-3">
-                <h2 className="text-center my-10">Your cart is empty</h2>
-                <Link to="/menu" className="btn btn-primary">Go to Menu</Link>
+            <div className="text-center mt-16">
+                <h2>Your cart is empty</h2>
+                <Link to={"/menu"} className="info-btn">
+                    Return to menu
+                </Link>
             </div>
         );
     }
@@ -72,10 +74,11 @@ function CartView() {
                     </tbody>
                 </table>
             </div>
-            <div className="text-right">
-                <Link to="/menu" className="btn btn-primary my-2">Continue Shopping</Link>
-                <p className="font-bold mt-2">Subtotal: CHF {items.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}</p>
-                <button className="btn btn-success -mt-2">Checkout</button>
+            <div className="text-right mt-8">
+                <Link to="/menu" className="checkout-btn">Continue Shopping</Link>
+                <p className="font-bold mt-12 mr-1">Subtotal: CHF {items.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2)}</p>
+                <Link to="#" className="checkout-btn">Checkout*</Link>
+                <p className="text-xs mt-2">*Not implemented... yet</p>
             </div>
         </div>
     );
