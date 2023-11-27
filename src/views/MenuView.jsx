@@ -7,7 +7,9 @@ function MenuView() {
 			<h1 className='text-center'>Gourmet Menu</h1>
 			<div className="row">
 				{menuItemsData.map(item => (
-					<div key={item.id} className="col-md-3">
+					<div
+						key={item.id}
+						className="col-12 col-sm-6 col-md-4 col-lg-3">
 						<MenuItem item={item} />
 					</div>
 				))}

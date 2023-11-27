@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"name": "Ginger Lemon Hummus",
+		"name": "Lemon Hummus",
 		"description": "A zesty twist on the classic hummus, our ginger lemon version is a tantalizing blend of Mediterranean tradition and Asian zest, perfect for a light and healthy appetizer.",
 		"ingredients": "Chickpeas, tahini, ginger, lemon, olive oil, pita bread",
 		"price": 12,
@@ -17,7 +17,7 @@
 	},
 	{
 		"id": 3,
-		"name": "Empire Eggplant Tempura",
+		"name": "Tempura Tower",
 		"description": "A crispy, savory delight, our eggplant tempura is given a Mediterranean twist with feta and sun-dried tomatoes, all united by a delicate miso glaze.",
 		"ingredients": "Eggplant, feta cheese, sun-dried tomatoes, tempura batter, miso glaze",
 		"price": 18,
@@ -33,7 +33,7 @@
 	},
 	{
 		"id": 5,
-		"name": "Saffron Sashimi Symphony",
+		"name": "Sashimi Symphony",
 		"description": "Experience the delicate harmony of fresh sashimi, subtly enhanced with the luxurious touch of saffron and a citrusy soy emulsion, crafting an unforgettable melody of flavors.",
 		"ingredients": "Salmon, tuna, yellowtail, saffron, microgreens, soy sauce, lemon juice",
 		"price": 25,
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": 6,
-		"name": "Aegean Sushi Platter",
+		"name": "Aegean Sushi Mix",
 		"description": "An adventurous exploration of flavors, our Aegean Sushi Platter brings the essence of the Mediterranean to traditional sushi, with ingredients like grilled octopus and tzatziki.",
 		"ingredients": "Sushi rice, nori, grilled octopus, tzatziki, feta cheese, cucumber, olives",
 		"price": 27,
@@ -57,7 +57,7 @@
 	},
 	{
 		"id": 8,
-		"name": "MediterrAsian Sea Breeze",
+		"name": "MediterrAsian Sea",
 		"description": "A luxurious blend of the ocean's bounty, featuring grilled scallops and shrimp, harmoniously paired with saffron-infused risotto, combining the best of Mediterranean and Asian flavors.",
 		"ingredients": "Grilled scallops, shrimp, saffron risotto, seaweed, lemon zest, olive oil, garlic, herbs",
 		"price": 29,

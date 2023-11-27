@@ -34,15 +34,15 @@ function CartView() {
                     </thead>
                     <tbody>
                         {items.map(item => (
-                            <tr key={item.id} className="product-row">
+                            <tr key={item.id} className="product-row align-middle">
                                 <td className="flex items-center">
-                                    <img src={item.image} alt={item.name} className="w-24 h-24 rounded my-1 mr-4" />
+                                    <img src={item.image} alt={item.name} className="w-12 md:w-24 h-12 md:h-24 rounded my-1 mr-4" />
                                     <div>
                                         <div className="title-cart">{item.name}</div>
                                         <div className="text-sm">CHF {item.price}.00</div>
                                     </div>
                                 </td>
-                                <td className="text-center align-middle">
+                                <td className="text-center">
                                     <div className="flex items-center justify-end">
                                         <button
                                             onClick={() => handleQuantityChange(item, item.quantity - 1)}
@@ -66,7 +66,7 @@ function CartView() {
                                         />
                                     </div>
                                 </td>
-                                <td className="text-right align-middle font-bold">
+                                <td className="text-right font-bold">
                                     ${(item.price * item.quantity).toFixed(2)}
                                 </td>
                             </tr>

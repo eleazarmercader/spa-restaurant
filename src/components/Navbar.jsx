@@ -9,26 +9,26 @@ function Navbar() {
 	const totalItems = items.reduce((total, item) => total + item.quantity, 0);
 
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-white border-1">
-			<div className="container-fluid">
-				<Link className="navbar-brand pl-16" to="/">
+		<nav className="navbar navbar-expand navbar-light bg-white border-1 sticky-top">
+			<div className="container-fluid flex justify-between">
+				<Link className="navbar-brand pl-4 md:pl-8 lg:pl-16" to="/">
 					<img
 						src="/public/assets/logo_2.png"
 						alt="Logo"
-						className="h-10"
+						className="max-h-10 w-auto"
 					/>
 					</Link>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<Link className="nav-link-1 px-8" to="/">Home</Link>
+								<Link className="nav-link-1 px-4 md:px-6 lg:px-8" to="/">Home</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link-1 px-8" to="/menu">Menu</Link>
+								<Link className="nav-link-1 px-4 md:px-6 lg:px-8" to="/menu">Menu</Link>
 							</li>
 						</ul>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<Link className="nav-link-1 px-20 flex items-center" to="/cart">
+								<Link className="nav-link-1 sm:px-15 lg:px-20 flex items-center" to="/cart">
 									<FaShoppingCart />
 									<span
 										className={`text-sm pl-2

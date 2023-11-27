@@ -13,8 +13,12 @@ function MenuItem({ item }) {
     };
 
     return (
-        <div className="card text-center">
-            <img src={item.image} alt={item.name} className="card-img-top" />
+        <div className="card">
+            <img
+                src={item.image}
+                alt={item.name}
+                className="card-img-top transition-transform duration-300 ease-in-out md:hover:scale-105"
+            />
             <div className="card-body">
                 <h5 className="card-title">{item.name}</h5>
                 <Link to={`/detail/${item.id}`} className="info-btn">
@@ -29,7 +33,7 @@ function MenuItem({ item }) {
                     ) : (
                         <div>
                             <button onClick={handleAddToCart} className="add-btn">
-                                Add another one
+                                Add 1+
                             </button>
                             <Link to="/cart" className="ml-4 info-btn">
                                 Go to cart

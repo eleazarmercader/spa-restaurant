@@ -30,7 +30,10 @@ function DetailView() {
         <div className='container mt-4 d-flex justify-content-center'>
             <div className="detail-view">
                 <div className="detail-image-container">
-                    <img src={item.image} alt={item.name} className="detail-image" />
+                    <img
+                        src={item.image}
+                        alt={item.name}
+                        className="detail-image transition-transform duration-300 ease-in-out md:hover:scale-105" />
                 </div>
                 <div className="detail-info">    
                     <h1>{item.name}</h1>
@@ -47,7 +50,7 @@ function DetailView() {
                         <button
                             onClick={handleAddToCart}
                             className="add-btn my-4"
-                        > Add another one
+                        > Add 1+
                         </button>
                     )}
                     <div>
