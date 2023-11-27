@@ -233,3 +233,37 @@ button:focus-visible {
     line-height: 1.5;
   }
 }
+
+.footer {
+  background-color: #bca27c;
+  color: white;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.footer-text {
+  margin-bottom: 1rem;
+  font-size: small;
+}
+@media (min-width: 765px) {
+  .footer-text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-icon {
+  width: 20px;
+  height: auto;
+  display: inline;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.footer-link:hover {
+  color: #3b3e2f;
+}
