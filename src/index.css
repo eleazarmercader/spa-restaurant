@@ -142,11 +142,6 @@ button:focus-visible {
   min-height: 410px;
   position: relative;
 }
-/* @media (min-width: 574px) {
-  .card {
-      font-size: 0.75em;
-  }
-} */
 
 .detail-view {
   display: flex;
